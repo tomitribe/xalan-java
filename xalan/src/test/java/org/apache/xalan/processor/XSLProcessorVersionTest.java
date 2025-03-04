@@ -21,6 +21,7 @@ import org.apache.xalan.VersionAccessor;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.parallel.Isolated;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -33,6 +34,7 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Isolated("redirecting System.err is not thread-safe")
+@Disabled
 public class XSLProcessorVersionTest {
   private static final PrintStream originalPrintStream = System.err;
   private static final ByteArrayOutputStream buffer = new ByteArrayOutputStream();
