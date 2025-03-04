@@ -20,7 +20,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>xalan</groupId>
   <artifactId>xalan-j</artifactId>
-  <version>2.7.4-SNAPSHOT</version>
+  <version>2.7.3-TT.1-SNAPSHOT</version>
   <licenses>
     <license>
       <name>Apache-2.0</name>
@@ -615,4 +615,9 @@
     </plugins>
   </reporting>
 
+  <scm>
+    <connection>scm:git:git@github.com:tomitribe/xalan-java.git</connection>
+    <developerConnection>scm:git:git@github.com:tomitribe/xalan-java.git</developerConnection>
+    <url>scm:git:git@github.com:tomitribe/xalan-java.git</url>
+  </scm>
 </project>
