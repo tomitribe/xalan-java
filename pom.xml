@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <!-- KNOWN ISSUES:
        "Production" tgz/zip files need to be copied to ant-like build/
        as temporary xalan-test integration
@@ -18,7 +20,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>xalan</groupId>
   <artifactId>xalan-j</artifactId>
-  <version>2.7.3-TT.1</version>
+  <version>2.7.4-SNAPSHOT</version>
   <licenses>
     <license>
       <name>Apache-2.0</name>
@@ -51,7 +53,7 @@
     <!-- TODO: Upgrade to 5.x after dropping requirement to build on JDK 8 -->
     <mockito.version>4.11.0</mockito.version>
     <maven-javadoc-plugin.version>3.6.0</maven-javadoc-plugin.version>
-    <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+    <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
   </properties>
 
   <modules>
@@ -206,7 +208,7 @@
         <jdk>[1,)</jdk>
       </activation>
       <modules>
-<!--        <module>integration-tests</module>-->
+        <module>integration-tests</module>
       </modules>
     </profile>
   </profiles>
@@ -613,8 +615,4 @@
     </plugins>
   </reporting>
 
-
-  <scm>
-    <tag>xalan-j-2.7.3-TT.1</tag>
-  </scm>
 </project>
