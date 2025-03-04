@@ -20,12 +20,26 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>xalan</groupId>
   <artifactId>xalan-j</artifactId>
-  <version>2.7.3</version>
+  <version>2.7.4-SNAPSHOT</version>
   <licenses>
     <license>
       <name>Apache-2.0</name>
     </license>
   </licenses>
+
+  <distributionManagement>
+    <repository>
+      <id>tomitribe.releases.https</id>
+      <name>Tomitribe Release Distribution Repository</name>
+      <url>https://repository.tomitribe.com/service/local/staging/deploy/maven2</url>
+    </repository>
+
+    <snapshotRepository>
+      <id>tomitribe.snapshots.https</id>
+      <name>Tomitribe Development Snapshot Repository</name>
+      <url>https://repository.tomitribe.com/content/repositories/snapshots-tomitribe</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
